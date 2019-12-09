@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="resources/js/validation.js"></script>
+    <title>Update Relationship of Entities</title>
+</head>
+
+<body>
+    <section id="sectionRelate" class="editSection">
+        <div class="container">
+            <h2>Update Relationship of Entities</h2>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Student per Course <ion-icon class="icon-big" name="contacts">
+                    </ion-icon>
+                </legend>
+                <form class="correlateForm">
+                    <div class="form-group justify-content-center">
+                        <label for="students" class="form-label">Select Student:</label>
+                        <input list="students" name="students" placeholder="Student" maxlength="20" size="20" required>
+                        <datalist id="students">
+                            <option value="Alex Brown"></option>
+                            <option value="George Williams"></option>
+                            <option value="John Johnson"></option>
+                            <option value="Nick Jones"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center">
+                        <label for="studentCourses" class="form-label">Select Course:</label>
+                        <input list="studentCourses" name="studentCourses" placeholder="Course" maxlength="20" size="20"
+                            required>
+                        <datalist id="studentCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Update</button>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Trainer per Course <ion-icon class="icon-big" name="people">
+                    </ion-icon>
+                </legend>
+                <form class="correlateForm">
+                    <div class="form-group justify-content-center">
+                        <label for="trainers" class="form-label">Select Trainer:</label>
+                        <input list="trainers" name="trainers" placeholder="Trainer" maxlength="20" size="20" required>
+                        <datalist id="trainers">
+                            <option value="David Parker"></option>
+                            <option value="Mike Rogers"></option>
+                            <option value="Sophia Anderson"></option>
+                            <option value="Olivia Lewis"></option>
+                            <option value="Mike Rogers"></option>
+                            <option value="Sophia Anderson"></option>
+                            <option value="Olivia Lewis"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center">
+                        <label for="trainerCourses" class="form-label">Select Course:</label>
+                        <input list="trainerCourses" name="trainerCourses" placeholder="Course" maxlength="20" size="20"
+                            required>
+                        <datalist id="trainerCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Update</button>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Assignment per Course <ion-icon class="icon-big" name="book">
+                    </ion-icon>
+                </legend>
+                <form class="correlateForm">
+                    <div class="form-group justify-content-center">
+                        <label for="assignments" class="form-label">Select Assignment:</label>
+                        <input list="assignments" name="assignments" placeholder="Assignment" maxlength="20" size="20"
+                            required>
+                        <datalist id="assignments">
+                            <option value="Soil Mechanics"></option>
+                            <option value="Earthquake Engineering"></option>
+                            <option value="Computational Geotechnics"></option>
+                            <option value="Strength Of Materials"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center">
+                        <label for="assignmentCourses" class="form-label">Select Course:</label>
+                        <input list="assignmentCourses" name="assignmentCourses" placeholder="Course" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group justify-content-center align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Update</button>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Assignment per Student per Course
+                    <ion-icon class="icon-big" name="contacts"></ion-icon>
+                    <ion-icon class="icon-big" name="book"></ion-icon>
+                </legend>
+                <form class="correlateForm">
+                    <div class="form-group col-3 justify-content-center">
+                        <label for="assignmentsSC" class="form-label">Select Assignment:</label>
+                        <input list="assignmentsSC" name="assignmentsSC" placeholder="Assignment" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentsSC">
+                            <option value="Soil Mechanics"></option>
+                            <option value="Earthquake Engineering"></option>
+                            <option value="Computational Geotechnics"></option>
+                            <option value="Strength Of Materials"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group col-3 justify-content-center">
+                        <label for="assignmentStudents" class="form-label">Select Student:</label>
+                        <input list="assignmentStudents" name="assignmentStudents" placeholder="Student" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentStudents">
+                            <option value="Alex Brown"></option>
+                            <option value="George Williams"></option>
+                            <option value="John Johnson"></option>
+                            <option value="Nick Jones"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group col-3 justify-content-center">
+                        <label for="assignmentSCourses" class="form-label">Select Course:</label>
+                        <input list="assignmentSCourses" name="assignmentSCourses" placeholder="Course" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentSCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group  justify-content-center align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Update</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+</body>
+
+</html>

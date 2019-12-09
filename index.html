@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/validation.js"></script>
+    <title>Private School</title>
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#home"><img src="resources/img/freeLogo.jpeg"
+                    alt="CivilEngineers Logo / Credits:LogoDesign.net" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Entities</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#sectionStudent">Students</a>
+                            <a class="dropdown-item" href="#sectionTrainer">Trainers</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#sectionCourse">Courses</a>
+                            <a class="dropdown-item" href="#sectionAssignment">Assignments</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionRelate">Relate entities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="welcome">
+            <h1>Welcome to our Private School<br><span>Build the future with us!</span></h1>
+            <p>Our entities:</p>
+            <a href="#sectionStudent" class="btn" role="button">Students</a>
+            <a href="#sectionTrainer" class="btn" role="button">Trainers</a>
+            <a href="#sectionCourse" class="btn" role="button">Courses</a>
+            <a href="#sectionAssignment" class="btn" role="button">Assignments</a>
+        </div>
+    </header>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Turning knowledge into practice</h2>
+                    <p>Our school seeks to equip <strong>students</strong> with all the necessary skills for civil
+                        engineering.<br>We want them to take advantage of all the available opportunities provided by
+                        qualified
+                        <strong>trainers</strong> and <strong>courses</strong> in a wide variety of subjects and
+                        <strong>assignments</strong>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <ul class="photos clearfix">
+                        <li>
+                            <figure class="school-photo">
+                                <img src="resources/img/1.jpg"
+                                    alt="Newly Graduated People Wearing Black Academy Gowns Throwing Hats Up in the Air / Credits:Pixabay via Pexels"
+                                    class="image">
+                                <div class="middle">
+                                    <a href="#sectionStudent">
+                                        <div class="imgText">Students</div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="school-photo">
+                                <img src="resources/img/2.jpg"
+                                    alt="People Sitting Beside Brown Wooden Desk Near Flat Screen Tv / Credits:Christina Morillo via Pexels"
+                                    class="image">
+                                <div class="middle">
+                                    <a href="#sectionTrainer">
+                                        <div class="imgText">Trainers</div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="school-photo">
+                                <img src="resources/img/3.jpg"
+                                    alt="Close-up of Apple on Top of Books / Credits:Pixabay via Pexels" class="image">
+                                <div class="middle">
+                                    <a href="#sectionCourse">
+                                        <div class="imgText">Courses</div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="school-photo">
+                                <img src="resources/img/4.jpg" alt="Pile of Books / Credits:Pixabay via Pexels"
+                                    class="image">
+                                <div class="middle">
+                                    <a href="#sectionAssignment">
+                                        <div class="imgText">Assignments</div>
+                                    </a>
+                                </div>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionStudent">
+        <div class="container">
+            <h3>STUDENTS</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <form class="student-form" onsubmit="return confirmation()" action="#sectionStudent" autocomplete="on">
+                        <div class="form-group row">
+                            <label for="firstNameSt" class="col-4 col-form-label">First Name:</label>
+                            <div class="col-8">
+                                <input id="firstNameSt" type="text" name="firstNameSt"
+                                    placeholder="Student's first name" maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastNameSt" class="col-4 col-form-label">Last Name:</label>
+                            <div class="col-8">
+                                <input id="lastNameSt" type="text" name="lastNameSt" placeholder="Student's last name"
+                                    maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateOfBirth" class="col-4 col-form-label">Date of birth:</label>
+                            <div class="col-8">
+                                <input id="dateOfBirth" type="date" name="dateOfBirth"
+                                    placeholder="Student's date of birth">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="tuitionFees" class="col-4 col-form-label">Tuition fees:</label>
+                            <div class="col-8">
+                                <input id="tuitionFees" type="number" name="tuitionFees"
+                                    placeholder="Student's tuition fees" size="21" min="0">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label">&nbsp;</label>
+                            <div class="col-8">
+                                <button class="btn" onclick="return validateStudent()">Add Student</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto col-form-label">Edit student</legend>
+                        <form>
+                            <div class="form-group col-sm">
+                                <label for="existingStudents" class="col-form-label">Select Student:</label>
+                                <input list="existingStudents" name="existingStudents" placeholder="Student"
+                                    maxlength="20" size="28" required>
+                                <datalist id="existingStudents">
+                                    <option value="Alex Brown"></option>
+                                    <option value="George Williams"></option>
+                                    <option value="John Johnson"></option>
+                                    <option value="Nick Jones"></option>
+                                </datalist>
+                            </div>
+                            <div class="form-group col-sm">
+                                <label>&nbsp;</label>
+                                <a class="btn" href="editStudent.html" target="_blank">Edit</a>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <br>
+                    <div class="form-group row">
+                        <label>&nbsp;</label>
+                        <div class="col">
+                            <a class="btn" href="#sectionRelate">Student per Course</a><br /><br />
+                            <a class="btn" href="#sectionRelate">Assignment per Student per
+                                Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionTrainer">
+        <div class="container">
+            <div class="row justify-content-start trainerDiv">
+                <div class="col">
+                    <h3>TRAINERS</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <form class="trainer-form" onsubmit="return confirmation()" action="#sectionTrainer" autocomplete="on">
+                        <div class="form-group row">
+                            <label for="firstNameTr" class="col-3 col-form-label">First Name:</label>
+                            <div class="col-8">
+                                <input id="firstNameTr" type="text" name="firstNameTr"
+                                    placeholder="Trainer's first name" maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastNameTr" class="col-3 col-form-label">Last Name:</label>
+                            <div class="col-8">
+                                <input id="lastNameTr" type="text" name="lastNameTr" placeholder="Trainer's last name"
+                                    maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="subject" class="col-3 col-form-label">Subject:</label>
+                            <div class="col-8">
+                                <input id="subject" type="text" name="subject" placeholder="Trainer's subject"
+                                    maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label">&nbsp;</label>
+                            <div class="col-8">
+                                <button class="btn" onclick="return validateTrainer()">Add Trainer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto col-form-label">Edit trainer</legend>
+                        <form>
+                            <div class="form-group col-sm">
+                                <label for="existingTrainers" class="col-4 col-form-label">Select Trainer:</label>
+                                <input list="existingTrainers" name="existingTrainers" placeholder="Trainer" required>
+                                <datalist id="existingTrainers">
+                                    <option value="David Parker"></option>
+                                    <option value="Mike Rogers"></option>
+                                    <option value="Sophia Anderson"></option>
+                                    <option value="Olivia Lewis"></option>
+                                </datalist>
+                            </div>
+                            <div class="form-group col-sm">
+                                <label>&nbsp;</label>
+                                <a class="btn" href="editTrainer.html" target="_blank">Edit</a>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <br>
+                    <div class="form-group row">
+                        <label>&nbsp;</label>
+                        <div class="col">
+                            <a class="btn" href="#sectionRelate">Trainer per Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionCourse">
+        <div class="container">
+            <h3>COURSES</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <form class="course-form" onsubmit="return confirmation()" action="#sectionCourse" autocomplete="on">
+                        <div class="form-group row">
+                            <label for="titleCourse" class="col-4 col-form-label">Title:</label>
+                            <div class="col-8">
+                                <input id="titleCourse" type="text" name="titleCourse" placeholder="Course's title"
+                                    maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="stream" class="col-4 col-form-label">Stream:</label>
+                            <div class="col-8">
+                                <input id="stream" type="text" name="stream" placeholder="Course's stream"
+                                    maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="type" class="col-4 col-form-label">Stream:</label>
+                            <div class="col-8">
+                                <input id="type" type="text" name="type" placeholder="Course's type" maxlength="20"
+                                    size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="startDate" class="col-4 col-form-label">Start date:</label>
+                            <div class="col-8">
+                                <input id="startDate" type="date" name="startDate" placeholder="Course's start date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="endDate" class="col-4 col-form-label">End date:</label>
+                            <div class="col-8">
+                                <input id="endDate" type="date" name="endDate" placeholder="Course's end date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label">&nbsp;</label>
+                            <div class="col-8">
+                                <button class="btn" onclick="return validateCourse()">Add Course</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto col-form-label">Edit course</legend>
+                        <form>
+                            <div class="form-group col-sm">
+                                <label for="existingCourses" class="col-form-label">Select Course:</label>
+                                <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="28" required>
+                                <datalist id="existingCourses">
+                                    <option value="Foundations"></option>
+                                    <option value="Reinforced Concrete"></option>
+                                    <option value="Hydrology"></option>
+                                    <option value="Road Construction"></option>
+                                </datalist>
+                            </div>
+                            <div class="form-group col-sm">
+                                <label>&nbsp;</label>
+                                <a class="btn" href="editCourse.html" target="_blank">Edit</a>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <br>
+                    <div class="form-group row">
+                        <label>&nbsp;</label>
+                        <div class="col">
+                            <a class="btn" href="#sectionRelate">Student per Course</a>
+                            <a class="btn" href="#sectionRelate">Trainer per Course</a><br /><br />
+                            <a class="btn" href="#sectionRelate">Assignment per
+                                Course</a><br /><br />
+                            <a class="btn" href="#sectionRelate">Assignment per Student per
+                                Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionAssignment">
+        <div class="container">
+            <h3>ASSIGNMENTS</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <form class="assignment-form" action="#sectionAssignment" onsubmit="return confirmation()" autocomplete="on">
+                        <div class="form-group row">
+                            <label for="titleAssignment" class="col-4 col-form-label">Title:</label>
+                            <div class="col-8">
+                                <input id="titleAssignment" type="text" name="titleAssignment"
+                                    placeholder="Assignment's title" maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="description" class="col-4 col-form-label">Description:</label>
+                            <div class="col-8">
+                                <input id="description" type="text" name="description"
+                                    placeholder="Assignment's description" maxlength="20" size="21">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="subDateTime" class="col-4 col-form-label">Submission date/time:</label>
+                            <div class="col-8">
+                                <input id="subDateTime" type="date" name="subDateTime"
+                                    placeholder="Assignment's date & time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="oralMark" class="col-4 col-form-label">Oral Mark:</label>
+                            <div class="col-8">
+                                <input id="oralMark" type="number" name="oralMark" placeholder="Assignment's oral mark"
+                                    min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="totalMark" class="col-4 col-form-label">Total Mark:</label>
+                            <div class="col-8">
+                                <input id="totalMark" type="number" name="totalMark"
+                                    placeholder="Assignment's oral mark" min="0" max="10">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label">&nbsp;</label>
+                            <div class="col-8">
+                                <button class="btn" onclick="return validateAssignment()">Add Assignment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto col-form-label">Edit assignment</legend>
+                        <form id="editForm">
+                            <div class="form-group col-sm">
+                                <label for="existingAssignments" class="col-form-label">Select Assignment:</label>
+                                <input list="existingAssignments" name="existingAssignments" placeholder="Assignment"
+                                    maxlength="20" size="28" required>
+                                <datalist id="existingAssignments">
+                                    <option value="Soil Mechanics"></option>
+                                    <option value="Earthquake Engineering"></option>
+                                    <option value="Computational Geotechnics"></option>
+                                    <option value="Laboratory on Materials"></option>
+                                </datalist>
+                            </div>
+                            <div class=" form-group col-sm">
+                                <label>&nbsp;</label>
+                                <a class="btn" href="editAssignment.html" target="_blank">Edit</a>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <br>
+                    <div class="form-group row">
+                        <label>&nbsp;</label>
+                        <div class="col">
+                            <a class="btn" href="#sectionRelate">Assignment per
+                                Course</a><br /><br />
+                            <a class="btn" href="#sectionRelate">Assignment per Student per
+                                Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionRelate">
+        <div class="container">
+            <h2>RELATE ENTITIES</h2>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Student per Course <ion-icon class="icon-big" name="contacts">
+                    </ion-icon>
+                </legend>
+                <form class="relateForm">
+                    <div class="form-group">
+                        <label for="students" class="form-label">Select Student:</label>
+                        <input list="students" name="students" placeholder="Student" maxlength="20" size="20" required>
+                        <datalist id="students">
+                            <option value="Alex Brown"></option>
+                            <option value="George Williams"></option>
+                            <option value="John Johnson"></option>
+                            <option value="Nick Jones"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentCourses" class="form-label">Select Course:</label>
+                        <input list="studentCourses" name="studentCourses" placeholder="Course" maxlength="20" size="20"
+                            required>
+                        <datalist id="studentCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Add</button>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label>&nbsp;</label>
+                        <a class="btn" href="editRelationship.html" target="_blank">Edit</a>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Trainer per Course <ion-icon class="icon-big" name="people">
+                    </ion-icon>
+                </legend>
+                <form class="relateForm">
+                    <div class="form-group">
+                        <label for="trainers" class="form-label">Select Trainer:</label>
+                        <input list="trainers" name="trainers" placeholder="Trainer" maxlength="20" size="20" required>
+                        <datalist id="trainers">
+                            <option value="David Parker"></option>
+                            <option value="Mike Rogers"></option>
+                            <option value="Sophia Anderson"></option>
+                            <option value="Olivia Lewis"></option>
+                            <option value="Mike Rogers"></option>
+                            <option value="Sophia Anderson"></option>
+                            <option value="Olivia Lewis"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="trainerCourses" class="form-label">Select Course:</label>
+                        <input list="trainerCourses" name="trainerCourses" placeholder="Course" maxlength="20" size="20"
+                            required>
+                        <datalist id="trainerCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Add</button>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label>&nbsp;</label>
+                        <a class="btn" href="editRelationship.html" target="_blank">Edit</a>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Assignment per Course <ion-icon class="icon-big" name="book">
+                    </ion-icon>
+                </legend>
+                <form class="relateForm">
+                    <div class="form-group">
+                        <label for="assignments" class="form-label">Select Assignment:</label>
+                        <input list="assignments" name="assignments" placeholder="Assignment" maxlength="20" size="20"
+                            required>
+                        <datalist id="assignments">
+                            <option value="Soil Mechanics"></option>
+                            <option value="Earthquake Engineering"></option>
+                            <option value="Computational Geotechnics"></option>
+                            <option value="Strength Of Materials"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="assignmentCourses" class="form-label">Select Course:</label>
+                        <input list="assignmentCourses" name="assignmentCourses" placeholder="Course" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Add</button>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label>&nbsp;</label>
+                        <a class="btn" href="editRelationship.html" target="_blank">Edit</a>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset class="border bg-light">
+                <legend class="w-auto form-label">Assignment per Student per Course
+                    <ion-icon class="icon-big" name="contacts"></ion-icon>
+                    <ion-icon class="icon-big" name="book"></ion-icon>
+                </legend>
+                <form class="relateForm">
+                    <div class="form-group col-3">
+                        <label for="assignmentsSC" class="form-label">Select Assignment:</label>
+                        <input list="assignmentsSC" name="assignmentsSC" placeholder="Assignment" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentsSC">
+                            <option value="Soil Mechanics"></option>
+                            <option value="Earthquake Engineering"></option>
+                            <option value="Computational Geotechnics"></option>
+                            <option value="Strength Of Materials"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="assignmentStudents" class="form-label">Select Student:</label>
+                        <input list="assignmentStudents" name="assignmentStudents" placeholder="Student" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentStudents">
+                            <option value="Alex Brown"></option>
+                            <option value="George Williams"></option>
+                            <option value="John Johnson"></option>
+                            <option value="Nick Jones"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="assignmentSCourses" class="form-label">Select Course:</label>
+                        <input list="assignmentSCourses" name="assignmentSCourses" placeholder="Course" maxlength="20"
+                            size="20" required>
+                        <datalist id="assignmentSCourses">
+                            <option value="Foundations"></option>
+                            <option value="Reinforced Concrete"></option>
+                            <option value="Hydrology"></option>
+                            <option value="Road Construction"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label class="form-label">&nbsp;</label>
+                        <button class="btn" onclick="return confirmation()">Add</button>
+                    </div>
+                    <div class="form-group align-items-center">
+                        <label>&nbsp;</label>
+                        <a class="btn" href="editRelationship.html" target="_blank">Edit</a>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <section id="contactUs">
+        <div class="container">
+            <h2>Contact us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact details</h4>
+                    <hr>
+                    <div class="row">
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.011643799346!2d23.776609415180495!3d37.97685757972313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a197f123699c7f%3A0xd4676bf12d7b7605!2zzqPPh86_zrvOriDOoM6_zrvOuc-EzrnOus-Ozr0gzpzOt8-HzrHOvc65zrrPjs69LCDOlc64zr3Ouc66z4wgzpzOtc-Ez4PPjM6yzrnOvyDOoM6_zrvPhc-EzrXPh869zrXOr86_!5e0!3m2!1sel!2sgr!4v1570691630639!5m2!1sel!2sgr"
+                            width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ion-icon name="mail"></ion-icon>info@privateschool.com
+                        </li>
+                        <li>
+                            <ion-icon name="call"></ion-icon>+210 12 34 567
+                        </li>
+                        <li>
+                            <ion-icon name="pin"></ion-icon>Ηρώων Πολυτεχνείου 9,<br>T.K 15780, Αθηνα
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contact Form</h4>
+                    <hr>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control no-radius" type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-control no-radius" type="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary no-radius"
+                            onclick="return confirmation()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small pt-4">
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#home"> Civil Engineers. Private School.</a>
+            <p>Photo courtesy of <a href="https://www.pexels.com/@pixabay" target="_blank">Pixabay</a> via <a
+                    href="https://www.pexels.com" target="_blank">Pexels</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
