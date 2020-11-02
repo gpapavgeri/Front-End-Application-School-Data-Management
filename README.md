@@ -1,4 +1,4 @@
-# Front-End Private School Web Pages
+# Front-End Application School Data Management
 
 Design of web pages using HTML/CSS and implementation of the required validations using Javascript.
 
